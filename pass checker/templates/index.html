@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyber Password Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background-animation"></div>
+
+<div class="container">
+
+<header>
+
+<h1>🔐 Cyber Password Analyzer</h1>
+
+<p class="subtitle">
+Advanced Password Security Analysis Tool
+</p>
+
+</header>
+
+<section class="password-section">
+
+<div class="input-box">
+
+<input
+type="password"
+id="password"
+placeholder="Enter your password for analysis"
+autocomplete="off"
+/>
+
+<button id="togglePassword">👁</button>
+
+</div>
+
+</section>
+
+
+<section class="strength-meter">
+
+<h2>Password Strength</h2>
+
+<div class="meter">
+
+<div id="strength-bar"></div>
+
+</div>
+
+<p id="strength-text">Waiting for input...</p>
+
+</section>
+
+
+<section class="analysis-panel">
+
+<div class="analysis-card">
+
+<h3>Security Score</h3>
+
+<p id="score">-</p>
+
+</div>
+
+<div class="analysis-card">
+
+<h3>Password Entropy</h3>
+
+<p id="entropy">-</p>
+
+</div>
+
+<div class="analysis-card">
+
+<h3>Estimated Crack Time</h3>
+
+<p id="crack_time">-</p>
+
+</div>
+
+</section>
+
+
+<section class="feedback-panel">
+
+<h2>Security Recommendations</h2>
+
+<ul id="feedback-list">
+
+<li>Start typing a password to analyze security</li>
+
+</ul>
+
+</section>
+
+
+<section class="security-info">
+
+<h2>Security Notice</h2>
+
+<p>
+⚠ Your password is analyzed in real-time and is never stored or logged.
+This tool is designed only to evaluate password strength.
+</p>
+
+</section>
+
+<footer>
+
+<p>
+Cybersecurity Internship Project • Password Intelligence System
+</p>
+
+</footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
